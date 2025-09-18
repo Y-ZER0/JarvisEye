@@ -3,18 +3,21 @@ frontend/node_modules/
 frontend/build/
 frontend/dist/
 
-# Environment files
+# Frontend Environment files
 frontend/.env
 frontend/.env.local
 frontend/.env.development.local
 frontend/.env.test.local
 frontend/.env.production.local
 
-# Logs
+# Frontend Logs
 frontend/npm-debug.log*
 frontend/yarn-debug.log*
 frontend/yarn-error.log*
 frontend/lerna-debug.log*
+
+# Frontend package-lock (optional - you can keep this)
+# frontend/package-lock.json
 
 # Backend (Python/Flask)
 backend/__pycache__/
@@ -71,4 +74,5 @@ Thumbs.db
 
 # Temporary files
 *.tmp
-*.temp
+*.tempvenv_clean/ 
+venv/ 

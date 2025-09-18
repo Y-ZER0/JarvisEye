@@ -1,11 +1,18 @@
-# Core Flask dependencies
+# Compatible package versions for TensorFlow 2.13.0
+# Install in this exact order
+
+# NumPy - must be installed first with exact version
+numpy==1.24.3
+
+# TensorFlow - install after NumPy
+tensorflow==2.13.0
+
+# Flask dependencies
 Flask==2.3.3
 Flask-CORS==4.0.0
 
-# TensorFlow and ML dependencies
-tensorflow==2.13.0
-numpy==1.24.3
+# Image processing
 Pillow==10.0.1
 
-# Data processing
+# Data processing  
 pandas==2.0.3
