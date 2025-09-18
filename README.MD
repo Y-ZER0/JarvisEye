@@ -31,54 +31,53 @@ A full-stack web application featuring AI-powered face recognition capabilities.
 - Node.js (v14 or higher)
 - Python (v3.7 or higher)
 - pip (Python package manager)
+- At least 4GB RAM (for TensorFlow model loading)
 
 ## Installation & Setup
 
 ### Backend Setup
-
 1. Navigate to the backend directory:
-
    ```bash
    cd backend
    ```
 
 2. Create a virtual environment:
-
    ```bash
    python -m venv venv
    ```
 
 3. Activate the virtual environment:
-
    ```bash
    # Windows
    venv\Scripts\activate
-
+   
    # macOS/Linux
    source venv/bin/activate
    ```
 
-4. Install Python dependencies:
-
+4. Upgrade pip and install dependencies:
    ```bash
+   python -m pip install --upgrade pip
    pip install -r requirements.txt
    ```
 
-5. Run the Flask server:
+5. Ensure you have the required model files:
+   - `FCW.h5` (trained model weights)
+   - `class_names.txt` (class names file)
+   - `users.csv` (user database)
+
+6. Run the Flask server:
    ```bash
-   python face_recognition_backend.py
+   python face_recognition_backend_tf.py
    ```
 
 ### Frontend Setup
-
 1. Navigate to the frontend directory:
-
    ```bash
    cd frontend
    ```
 
 2. Install Node.js dependencies:
-
    ```bash
    npm install
    ```
