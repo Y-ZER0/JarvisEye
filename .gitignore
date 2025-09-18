@@ -1,14 +1,20 @@
-# Frontend (React)
+# Frontend (React) - Node modules and build files
 frontend/node_modules/
 frontend/build/
+frontend/dist/
+
+# Environment files
 frontend/.env
 frontend/.env.local
 frontend/.env.development.local
 frontend/.env.test.local
 frontend/.env.production.local
+
+# Logs
 frontend/npm-debug.log*
 frontend/yarn-debug.log*
 frontend/yarn-error.log*
+frontend/lerna-debug.log*
 
 # Backend (Python/Flask)
 backend/__pycache__/
