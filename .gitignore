@@ -42,12 +42,18 @@ backend/.installed.cfg
 backend/*.egg
 backend/MANIFEST
 
-# Virtual Environment
+# Virtual Environments (ALL VARIATIONS)
 backend/venv/
+backend/venv_clean/
+backend/myenv/
 backend/env/
 backend/ENV/
 backend/env.bak/
 backend/venv.bak/
+venv/
+venv_clean/
+myenv/
+env/
 
 # IDE
 .vscode/
@@ -74,5 +80,4 @@ Thumbs.db
 
 # Temporary files
 *.tmp
-*.tempvenv_clean/ 
-venv/ 
+*.temp
